@@ -24,5 +24,95 @@
       <li>Experimenting with new recipes</li>
   </ul>
 </section>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What are my favorite foods?</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #food-list {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        button {
+            background-color: #e60099;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e60099;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What are my favorite foods?</h1>
+    <button onclick="revealFoods()">Reveal to me!</button>
+    <div id="food-list">
+        <p>Pancakes </p>
+        <p>Grapes</p>
+        <p>Dark Chocolate</p>
+    </div>
+
+    <script>
+        function revealFoods() {
+            let foodList = document.getElementById("food-list");
+            foodList.style.display = "block";
+            setTimeout(() => {
+                foodList.style.opacity = "1";
+            }, 100);
+        }
+    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #64307b;
+            background-color: ;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+        }
+        .header:hover {
+            background-color: #64307b;
+            transform: scale(1.05);
+        }
+
+        .content {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <strong>Northwestern University</strong><br>
+    Journalism & Environmental Engineering
+</div>
+
+
 </body>
 </html>
